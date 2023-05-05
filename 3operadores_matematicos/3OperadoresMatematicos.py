@@ -34,7 +34,9 @@ exponenciacao = pow(numero1,2)
 print(f'A exponenciacao de {numero1}² = {exponenciacao}')
 # fazendo a raiz basta elevar a base por 0.5 ou 1/2 que dá a raiz quadrática
 raiz = pow(numero3,1/2)
-print(f'A raiz de {numero3} = {raiz}')
+# fazendo a raiz cúbica
+raiz1 = pow(numero3,1/3)
+print(f'A raiz de {numero3} = {raiz1}')
 # fazendo a resto da divisao
 resto = int(numero1%2)
 resto1 = int(numero1%3)

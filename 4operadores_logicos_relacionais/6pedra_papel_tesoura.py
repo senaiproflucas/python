@@ -15,10 +15,22 @@ player = int(input('Olá bem vindo ao jogo do JO-Ken-PO\n'
               '2-Papel\n'
               '3-Tesoura\n'
               'Escolha: '))
+if(player == 1):
+    player = 'pedra'
+elif(player ==2):
+    player = 'papel'
+elif(player ==3):
+    player = 'tesoura'
+else:
+    print('Digite uma opção válida')
+    exit()
 computer = randrange(1,4)#sempre escolha um número acima
-
-
-
+if(computer == 1):
+    computer = 'pedra'
+elif(computer ==2):
+    computer = 'papel'
+else:
+    computer = 'tesoura'
 
 sleep(1)
 print('Jo', end = '-')#end deixa na mesma linha
@@ -26,11 +38,10 @@ sleep(1)
 print('Ken', end = '-')
 sleep(1)
 print('Po')
-if(player == 1 and computer == 1 or player == 2 and computer == 2 or player == 3 and computer == 3):
+if(player == computer):
     print(f'Empate player Jogou {player} e computador jogou {computer}')
-elif(player == 1 and computer == 3 or player == 2 and computer == 1 and player == 3 and computer == 2):
+elif(player == 'pedra' and computer == 'tesoura' or player == 'papel' and computer == 'pedra' or player == 'tesoura' and computer == 'papel'):
     print(f'Parabéns você ganhou! Player jogou {player} e computador jogou {computer}')
 else:
     print(f'Que pena o computador superou! computador jogou {computer} e player jogou {player}')
-
 print(40*'#')

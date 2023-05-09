@@ -21,19 +21,52 @@ de 10 dentes pode estar conectada com uma outra menor de 100 dentes e é isso qu
 Os laços de repetição podem automatizar muitas tarefas e facilitar o processo.
 '''
 #exemplo de acumulador
-a = 0
-a = a + 1 # qual será o valor da variável a?
-print(a)
-a += 1 #é outra forma de escrever a mesma coisa se coloca o sinal de soma na frente e adiciona 1
-print(a)
+i = 0
+i = i + 1 # qual será o valor da variável a?
+print(i)
+i += 1 #é outra forma de escrever a mesma coisa se coloca o sinal de soma na frente e adiciona 1
+print(i)
+print('começando o for')
 #agora imaginem ter que fazer esse acumulador chegar a 10, 100 ou a 1000. Perderia muito tempo digitando linha à linha
 #nesse sentido o python ajuda no processo de automação. Veja que coisa simples.
-a = 0 #resetou a variável a agora ela vale 0
-while(a<10):
-    print(a)
-#neste algoritmo o loop nao se quebra porque a vale 0 eternamente, depois dessa pegadinha vamos atribuir a
-#atribuição +1
 
-while (a<10):
-    a+=1
-    print(a)
+#construindo o laço for
+#automaticamente ele irá incrementar de 1 em 1.
+#nota que no pyton ele sempre ira incrementar 1 e nunca o 0 se quiser que o for comece do 1 tem que inserir 1
+for i in range(0,10):
+    print(i)
+print('Aplicando o salto 2')
+#ele irá incrementar o número de saltos
+for i in range(0,10,2):
+    print(i)
+#fazendo tudo ser impresso na mesma linha
+for i in range(0,10):
+    print(i, end = '->')
+print('fim')
+#começando do 0
+for i in range(1,10):
+    print(i, end = '->')
+print('fim')
+#neste caso há um problema vai até o 9 e não até o 10 se precisar que vá até o 10 deve inserir +1 ou 11 no range
+for i in range(1,10+1):
+    print(i, end = '->')
+print('fim')
+'''
+Estrutura do for
+o for ele precisa de um valor inical, que será definio no inicio for var in(percorrerá a var) range(valor inical de var, até onde vai var, salto)
+em outras lingugens o for é um bloco 
+for(i=0;i<10;i++){
+    o for será executado aqui
+}
+No python existe essa sintaxe conforme trabalhada.
+Agora é importante fazer um for com decrementando menos um
+'''
+#neste exemplo o valor de i começa com 10, o alcance até 0 e o salto -1, ou seja um decremento, mas não vai até 0
+for i in range(10,0,-1):
+    print(i, end = '->')
+print('fim')
+#fazendo um decremento até 0 contudo haverá 11 incrementos na contagem.
+for i in range(10,-1,-1):
+    print(i, end = ' ')#foi inserido um espaço aqui
+print('fim')
+

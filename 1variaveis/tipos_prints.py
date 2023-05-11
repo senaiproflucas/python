@@ -20,3 +20,4 @@ print('1'+'1')
 #printando emojis deve baixar a biblioteca emoji
 print(emoji.emojize('Python é :thumbs_up:'))
 print(emoji.demojize('Python é 👍'))
+

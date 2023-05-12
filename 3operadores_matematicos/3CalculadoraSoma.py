@@ -1,20 +1,7 @@
 '''
 Objetivo: fazer uma calculadora do de soma:
-'''
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-Solução
+Tente criar um método para fazer essa função de soma.
+solução:
 fazer cast com o int na frente
 '''
 a = int(input("Digite um número: "))

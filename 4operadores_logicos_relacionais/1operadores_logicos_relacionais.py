@@ -1,4 +1,5 @@
 '''
+Prof. Luiz Henrique
 Condicional if trablaha com comparações
 Se tal número é maior que outro então faça isso SENÃO faça aquilo
 como fazer isso no algorítmo

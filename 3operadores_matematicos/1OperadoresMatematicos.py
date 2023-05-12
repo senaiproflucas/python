@@ -1,5 +1,8 @@
-'''
-Operadores matemáticos
+''' Prof. Luiz Henrique
+Operadores matemáticos. Assim como em outras linguagens
+as soluções são através de operações matemáticas. É isso
+que está por tras de cada solução em TI. O python também
+utiliza os operadores matemáticos.
 soma +
 subtração -
 divisão /

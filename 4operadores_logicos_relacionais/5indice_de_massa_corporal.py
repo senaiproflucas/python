@@ -1,5 +1,9 @@
-#faça um programa que calcule o índice de massa corporal
-'''
+'''Prof. Luiz Henrique
+A obesidade é uma doença que mata de forma silenciosa, muitas vezes
+nem notamos seus malefícios porque é difícil de se identificar alteração
+no fígado, pâncreas, que pode ocasinar em câncer.
+Pensando no bem estar dos usuários faça um programa que calcule o índice
+de massa corporal (IMC) Levando em conta esta tabela:
 Menor que 18,5	Magreza
 18,5 a 24,9	Normal
 25 a 29,9	Sobrepeso
@@ -7,8 +11,8 @@ Menor que 18,5	Magreza
 35 a 39,9	Obesidade grau II
 Maior que 40	Obesidade grau III
 '''
-peso = str(input('Peso: ')).replace(',','.')
-peso = float(peso)
+peso = str(input('Peso: ')).replace(',','.')#aqui é bom fazer o tratamento de variável
+peso = float(peso)# aqui se faz um cast
 altura = str(input('Altura: ')).replace(',','.')
 altura = float(altura)
 imc = peso/(pow(altura,2))

@@ -1,5 +1,6 @@
 '''
-Importante validar tipos de variaveis para evitar possiveis erros pelo usuario para o programa não parar
+Prof. Luiz Henrique
+Importante validar tipos de variáveis para evitar possiveis erros pelo usuario para o programa não parar
 o if sempre é muito utilizado para validações.
 '''
 nome = str(input('Olá digite o seu nome: '))

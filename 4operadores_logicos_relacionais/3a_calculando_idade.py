@@ -1,4 +1,4 @@
-'''
+'''Prof. Luiz Henrique
 idade version 2
 faça um programa que o usuário digite o nome, o sexo, a sua data de nascimento e calcule quantos anos ele possui
 o programa deverá exibir a idade, se o uruário pode dirigir se for mulher se já está na idade de mamografia

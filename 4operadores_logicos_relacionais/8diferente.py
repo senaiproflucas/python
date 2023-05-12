@@ -1,4 +1,4 @@
-'''
+'''Prof. Luiz Henrique
 trablaha do com diferente != o diferente é impotante para negar a condição verdadeira.
 quando se opta a esolher o que não é igual abre mais caminhos lógicos para a resolução do
 problema.

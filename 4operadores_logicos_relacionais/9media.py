@@ -1,6 +1,6 @@
-'''Elaborar um programa em que o usuário digita 3 notas float com duas casas decimais e o sistema calcula a
+'''Elaborar um programa em que o usuário digita 4 notas float com duas casas decimais e o sistema calcula a
 média com duas casas decimais no final, importante fazer tratamento de variáveis'''
-nota1 = float(str(input('Digite a nota 1: ').replace(',','.').strip()))
+nota1 = float(str(input('Digite a nota 1: ').replace(',','.').strip()))#aqui o cast já foi realizado no início
 nota2 = float(str(input('Digite a nota 2: ').replace(',','.').strip()))
 nota3 = float(str(input('Digite a nota 3: ').replace(',','.').strip()))
 nota4 = float(str(input('Digite a nota 4: ').replace(',','.').strip()))
@@ -12,5 +12,5 @@ else:
     # nota2 = float(nota2)
     # nota3 = float(nota3)
     # nota4 = float(nota4)
-    media = round((nota1+nota2+nota3+nota4)/4, 2)
+    media = round((nota1+nota2+nota3+nota4)/4, 2)#método round() que arredonda números matemáticos
     print(f'A média é: {media}')

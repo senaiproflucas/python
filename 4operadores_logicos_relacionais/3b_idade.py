@@ -1,25 +1,25 @@
-'''
-Faça um programa que leia o ano de nascimento de um jovem e informe
+'''Prof. Luiz Henrique
+Faça um programa que leia o ano de nascimento de um usuário e informe
 de acordo com sua idade:
 
-- Se ele ainda vai se alistar ao serviço militar
-- Se é a hora de se alistar
-- Se já passou do tempo do alistamento
+- Se ele ainda vai não pode dirigir
+- Se é a hora de fazer o exame de direção
+- Se já passou o tempo de fazer exame
 
 Seu programa também deverá mostrar o tempo que faltou ou que passou do prazo
 '''
 from datetime import datetime
 
-nasc = int(input("Em qual ano você nasceu? \n"))
-ano_atual = datetime.now().year
+dataNasc = int(input("Em qual ano você nasceu? \n"))
+anoAtual = datetime.now().year
 # print("Ano atual: {}".format(ano_atual))
-idade = (ano_atual - nasc)
+idade = (anoAtual - dataNasc)
 if idade < 18:
-    print("Você tem {} anos em {} e vai se alistar daqui a {} anos, em {}.".format(
-        idade, ano_atual, (18 - idade), (nasc + 18)))
-elif idade > 18:
-    print("Você tem {} anos e já passou seu período de alistamento.".format(idade))
-    print("Se não se alistou, deveria ter se alistado em {}, há {} anos atrás.".format(
-        (nasc + 18), idade - 18))
+    print("Você tem {} anos em {} e vai e pode ter sua carteira daqui há {} anos, em {}.".format(
+        idade, anoAtual, (18 - idade), (dataNasc + 18)))
+elif idade > 18 and idade <=65:
+    print("Você tem {} anos e já pode prestar o exame de diração.".format(idade))
+    print("Você não tinha realizado o exame deveria ter realizado em: {}, há {} anos.".format(
+        (dataNasc + 18), idade - 18))
 else:
-    print("Você tem {} anos. Está na hora de se alistar.".format(idade))
+    print("Você tem {} anos. Agora você deverá renovar a carteira a cada 3 anos .".format(idade))

@@ -1,5 +1,6 @@
 import datetime
 '''
+Prof. Luiz Henrique
 Exercícios
 1 fazer um programa que peça o nome do usuário e a data de nascimento através da data do sistema já dizer a idade.
 2A fazer um programa que calcule o juros simples. Paulo quer abrir um negócio junto com Mário fizeram um empréstimo
@@ -11,6 +12,11 @@ Exercícios
 Qual é a idade de Laura nos dias de hoje? Faça um programa que calcule as idades.
 '''
 import datetime
+'''A biblioteca date time faz diversas funções dentre elas exibir data e hora atual o código
+é importante para trabalhar com cálculos de idade e deixar a rotina de conferência de data
+mais automatizada, imagine fazer a atualização de idade de mais de 1000 clientes manualmente.
+Fica redundante e perde-se muito tempo para uma manutenção simples de código.
+'''
 
 #1
 nome = str(input('Olá digite seu nome: '))

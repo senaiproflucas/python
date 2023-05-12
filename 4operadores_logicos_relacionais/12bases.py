@@ -1,7 +1,7 @@
 ''' Programa que irá pedir para que o usuário digite as bases decimais:
 1 para binário
 2 para octal
-2 para hexadecimal
+3 para hexadecimal
 '''
 num = int(input("Digite um número a ser convertido: \n"))
 base = int(input('''Escolha a base da conversão:
@@ -12,12 +12,12 @@ Escolha: \n'''))
 
 if base == 1:
     print("Você escolheu binário.")
-    print("{} convertido para binário é: {}.".format(num, bin(num)[2:]))
+    print(f"{num} convertido para binário é: {bin(num)[2:]}.")
 elif base == 2:
     print("Você escolheu octal.")
-    print("{} convertido para octal é: {}.".format(num, oct(num)[2:]))
+    print(f"{num} convertido para a base octal é: {oct(num)[2:]}.")
 elif base == 3:
     print("Você escolheu hexadecimal.")
-    print("{} convertido para hexadecimal é: {}.".format(num, hex(num)[2:]))
+    print("{num} convertido para hexadecimal é: {hex(num)[:2]}.")
 else:
     print("Escolha apenas uma das 3 opções.")

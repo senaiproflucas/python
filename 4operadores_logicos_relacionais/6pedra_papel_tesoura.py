@@ -1,4 +1,4 @@
-'''
+''' Prof. Luiz Henrique e Lucas Gonzales
 Jo Ken Po Elaborar um programa de jo ken po o usuário deverá escolher pedra papel e tesoura em um menu
 e jogar contra o computador, para isso o computado deverá sortear de forma aleatória e o programa deverá
 dizer quem ganhou a partida.

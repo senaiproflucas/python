@@ -1,4 +1,4 @@
-'''
+'''Prof. Luiz Henrique
 Calculando números pares e números ímpares. Se for par escrever em azul e se for ímpar escrever em verde
 '''
 n = int(input('Digite o número: '))

@@ -1,8 +1,10 @@
 '''
-Aula 2 Declarando variaveis e seus tipos
+Prof. Luiz Henrique
+Declarando variaveis e seus tipos
 tipos simples: integer, float, boolean
 tipos complexos: string, tuplas, listas
 '''
+
 #variáveis do tipo string
 nome = str('A perereca é um ânuro')
 print(nome)
@@ -34,6 +36,7 @@ print(f'O valor é com print formatado {valorFloat:.2f}')
 print('O valor de print com format é {:.2f}'.format(valorFloat))
 
 #swap trocando variáveis de valores com variável auxiliar
+# copo cheio e copo vazio. em algumas linguagens é necessário criar uma variável auxiliar
 a = 15
 b = 20
 print(f'a vale {a} e b vale {b}')

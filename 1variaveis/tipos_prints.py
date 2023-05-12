@@ -4,7 +4,6 @@ do que uma organização visual com um alinhamento que é nativo da própria sin
 inserir nada dentro de chaves {} colchetes[] ou terminar instruçoes com ; basta indentar deixar
 na coluna certa para o python reconhecer que a estrutura esta dentro daquele bloco.
 A tecla tab será sua melhor amiga, ela fica em abaixo das aspas e acima da fixa no seu teclado.
-
 '''
 import emoji
 print('Hello World')

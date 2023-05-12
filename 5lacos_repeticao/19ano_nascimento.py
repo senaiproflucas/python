@@ -11,5 +11,5 @@ for i in range(4):
         contAdulto += 1
     elif dataAtual - num < 21:
         contJovem += 1
-print("Ao todo tivemos {} maiores e {} menores de idade.".format(
+print("Ao todo tivemos {} maiores de idade e {} menores de idade.".format(
     contAdulto, contJovem))

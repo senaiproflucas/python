@@ -1,6 +1,7 @@
-# Crie um programa que mostre na tela todos os números pares
-# que estão no intervalo entre 1 e 50
+'''Prof. Luiz Henrique
+Crie um programa que mostre na tela todos os números pares
+que estão no intervalo entre 1 a 100'''
 
-for num in range(1, 51):
-    if num % 2 == 0:
-        print(num)
+for numPar in range(1, 100):
+    if numPar % 2 == 0:
+        print(numPar)

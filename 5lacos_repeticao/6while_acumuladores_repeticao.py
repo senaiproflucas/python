@@ -1,4 +1,4 @@
-'''
+'''Prof. Luiz Henrique
 while else
 contadores/acumuladores
 não é ideal fazer isso com o while, para isso usamos o for!

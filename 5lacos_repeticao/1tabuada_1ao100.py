@@ -1,4 +1,4 @@
-'''
+'''Prof. Luiz Henrique
 Faça uma tabuada do 1 ao 100 utilizando o laço for.
 para isso é necessário conhecer o aninhamento de for.
 o aninhamento que seria um for dentro do outro como no exemplo.

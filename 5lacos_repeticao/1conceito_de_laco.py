@@ -1,4 +1,4 @@
-'''
+'''Prof. Luiz Henrique
 Existem dois tipos de laços de repetição o for e o while.
 O laço for é ideal para contagens numéricas, sobre ele pode-se fazer sequências aritméiticas como
 Progreção Aritmética (PA) e Progressão Geométrica (PG).
@@ -12,6 +12,12 @@ for i in range(0,10) -> irá mostrar a sequência 12345678910 como saída.
 O while é uma condição lógica. O laço de repetição nada mais é que enquanto a condição for verdadeira
 o laço se perpetuara até que atinja o que foi definido à partir deste momento o algorítmo sai do laço
 ele segue o fluxo que foi programado.
+De muitas maneiras, o objeto retornado por range()se comporta como se fosse uma lista, mas na verdade não é.
+É um objeto que retorna os itens sucessivos da sequência desejada quando você itera sobre ele, mas não faz
+parte da lista, economizando espaço.
+
+Dizemos que tal objeto é iterável , ou seja, adequado como alvo para funções e construções que esperam algo
+do qual possam obter itens sucessivos até que o suprimento se esgote.
 O melhor amigo de um laço são os acumuladores, uma variável pode acumular o valor dela + 1. Toda a
 variável para ir para o laço tem que ser iniciada com um valor, geralmente iniciamos com 0 se for
 string iniciamos com "" que significa vazio.
@@ -19,7 +25,54 @@ Laços de repetição são como engrenagens que ficam girando e movimentando o a
 engrenagem com 10 dentes e quando seu dente chegar ao fim ela para ou assume outra função, uma engrenagem
 de 10 dentes pode estar conectada com uma outra menor de 100 dentes e é isso que faz o movimento acontecer.
 Os laços de repetição podem automatizar muitas tarefas e facilitar o processo.
+A breakinstrução, como em C, sai do fechamento forou whileloop mais interno.
+
+As instruções de loop podem ter uma elsecláusula; ele é executado quando o loop termina por exaustão do
+iterável (com for) ou quando a condição se torna falsa (com while), mas não quando o loop é finalizado por
+uma breakinstrução. Isso é exemplificado pelo seguinte loop, que procura por números primos:
+
+
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n//x)
+            break
+    else:
+        # loop fell through without finding a factor
+        print(n, 'is a prime number')
+
+2 is a prime number
+3 is a prime number
+4 equals 2 * 2
+5 is a prime number
+6 equals 2 * 3
+7 is a prime number
+8 equals 2 * 4
+9 equals 3 * 3
+(Sim, este é o código correto. Observe atentamente: a elsecláusula pertence ao forloop, não à ifinstrução.)
+
+Quando usada com um loop, a elsecláusula tem mais em comum com a elsecláusula de uma tryinstrução do que com a das ifinstruções: a cláusula tryde uma instrução elseé executada quando nenhuma exceção ocorre e a elsecláusula de um loop é executada quando não break ocorre. Para saber mais sobre a tryinstrução e as exceções, consulte Manipulando exceções .
+
+A continueinstrução, também emprestada de C, continua com a próxima iteração do loop:
+
+
+for num in range(2, 10):
+    if num % 2 == 0:
+        print("Found an even number", num)
+        continue
+    print("Found an odd number", num)
+
+Found an even number 2
+Found an odd number 3
+Found an even number 4
+Found an odd number 5
+Found an even number 6
+Found an odd number 7
+Found an even number 8
+Found an odd number 9
 '''
+
+
 #exemplo de acumulador
 i = 0
 i = i + 1 # qual será o valor da variável a?

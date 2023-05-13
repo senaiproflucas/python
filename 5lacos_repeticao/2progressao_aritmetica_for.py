@@ -1,4 +1,4 @@
-'''
+'''Prof. Luiz Henrique
 fazer uma progressão arimética utilizando o for
 A Progressão Aritmética (P.A.) é uma sequência de números onde a diferença entre dois termos consecutivos é
 sempre a mesma. Essa diferença constante é chamada de razão da P.A..

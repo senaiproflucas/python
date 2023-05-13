@@ -1,4 +1,5 @@
-''' Crie um programa que leia dois valores e mostre um menu
+''' Prof. Luiz Henrique
+Crie um programa que leia dois valores e mostre um menu
 na tela:
 
 1: somar
@@ -24,26 +25,26 @@ menor = 0
 
 print(menu)
 
-user = int(input("Sua escolha (opções de 1 a 5): \n"))
-while user != 5:
-    if user > 5:  # exceção maior
-        print("Warning: escolha um número de 1 a 5.")
-        user = int(input("Sua escolha: \n"))
-    elif user < 0:  # exceção menor
+menu = int(input("Sua escolha [opções de 1 a 5]: \n"))
+while menu != 5:
+    if menu > 5:  # exceção maior
+        print("Escolha um número de 1 a 5.")
+        menu = int(input("Sua escolha: \n"))
+    elif menu < 0:  # exceção menor
         print("Warning: escolha um número positivo.")
-        user = int(input("Sua escolha: \n"))
+        menu = int(input("Sua escolha: \n"))
     else:  # Acionamento normal do programa:
-        if user == 1:  # Soma:
+        if menu == 1:  # Soma:
             print("Vocẽ escolheu soma!")
             print("Resultado da soma: \n{} + {} = {}".format(num1, num2, (num1 + num2)))
             print(menu)
-            user = int(input("Sua escolha: \n"))
-        elif user == 2:  # Multiplicação:
+            menu = int(input("Sua escolha: \n"))
+        elif menu == 2:  # Multiplicação:
             print("Você escolheu multiplicação!")
             print("Resultado da multiplicação: \n{} x {} = {:.0f}".format(num1, num2, (num1 * num2)))
             print(menu)
-            user = int(input("Sua escolha: \n"))
-        elif user == 3:  # Maior ou menor:
+            menu = int(input("Sua escolha: \n"))
+        elif menu == 3:  # Maior ou menor:
             if num1 > num2:
                 maior = num1
                 menor = num2
@@ -57,12 +58,12 @@ while user != 5:
             else:
                 print("Os dois números são idênticos.")
                 print(menu)
-            user = int(input("Sua escolha: \n"))
-        elif user == 4:  # Novos números:
-            new_num1 = float(input("Novo número 1: \n"))
-            new_num2 = float(input("Novo número 2: \n"))
-            num1 = new_num1
-            num2 = new_num2
+            menu = int(input("Sua escolha: \n"))
+        elif menu == 4:  # Novos números:
+            numeroNovo1 = float(input("Novo número 1: \n"))
+            numeroNovo2 = float(input("Novo número 2: \n"))
+            num1 = numeroNovo1
+            num2 = numeroNovo2
             print(menu)
-            user = int(input("Sua escolha: \n"))
+            menu = int(input("Sua escolha: \n"))
 print("Opção 5: programa encerrado.")

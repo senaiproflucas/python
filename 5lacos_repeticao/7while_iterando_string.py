@@ -1,21 +1,22 @@
-# Indices
-# 123456789 ...33
-frase ='O rato roeu a roupa do rei de roma'
+''' prof. Luiz Henrique Trabalhando com índices
+Indices
+123456789 ...33'''
+frase ='Quando a educação não é libertadora o oprimido quer tomar o lugar do opressor'
 tamanhoFrase = len(frase)
 contador = 0
-novaString = ''
-novaString1 = ''
+fraseNova = ''
+fraseNova1 = ''
 # while contador < tamanhoFrase:
 #     #print(frase[contador],contador)
-#     novaString += frase[contador]
+#     fraseNova += frase[contador]
 #     contador += 1
-#     print(novaString)
+#     print(fraseNova)
     #faz checagem
 while contador < tamanhoFrase:
     letra = frase[contador]
     if letra == 'r':
-        novaString1 += 'R'
+        fraseNova1 += 'R'
     else:
-        novaString1 += letra
-    contador += 1
-print(novaString1)
+        fraseNova1 += letra
+    contador += 1 #contador recebe contador = contador + 1
+print(fraseNova1)

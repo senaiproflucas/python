@@ -1,4 +1,4 @@
-'''
+'''Prof. Luiz Henrique
 sequencia de fibonacci
 Sequência de Fibonacci é a sequência numérica proposta pelo matemático Leonardo Pisa, mais conhecido como Fibonacci:
 
@@ -48,6 +48,7 @@ Divina Proporção, para fazer desenhos perfeitos.
 
 Leonardo Pisa (1175-1240) deu essa sequência a conhecer no seu livro Liber Abaci (Livro do Ábaco, em português),
 o qual data de 1202. Apesar disso, os indianos já haviam descrito essa sequência.
+Na faculdade sempre que fazia a utilização de termos sempre utilizava t1, t2, t3, etc.
 '''
 #fazer um programa em que o usuário escolhe quantidade de termos de fibonacci, fazer usando o laço for.
 n= int(input('Digite o número da sequência de Fibonacci: '))

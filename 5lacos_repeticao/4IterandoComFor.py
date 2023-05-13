@@ -1,13 +1,13 @@
-'''
+'''Prof. Luiz henrique
 For in Python
 Iterando strings com for
 Função range(start = 0, stop, step = 1
 range não depende do for e nem o for depende dela, porém as
 duas se dão muito bem juntos.
 '''
-texto = 'centriolo'
-novaString = ''
-for letra in texto:
+organela = 'centriolo'
+novoCarac = ''
+for letra in organela:
     print(letra)
 print('#############@@@@@@@@@@#########')
 #start(número que inicia, stop(número que para, step(pula)
@@ -23,12 +23,12 @@ for n in range(100):
         print(n)
 print('#############@@@@@@@@@@#########')
 
-for letra in texto:
+for letra in organela:
     if letra == 't':
-        novaString += letra.upper()
+        novoCarac += letra.upper()
     elif letra == 'o':
-        novaString += letra.upper()
+        novoCarac += letra.upper()
     else:
-        novaString += letra
-print(novaString)
+        novoCarac += letra
+print(novoCarac)
 #pode usar continue e o break
